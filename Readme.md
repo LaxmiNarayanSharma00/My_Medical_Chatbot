@@ -6,7 +6,7 @@ An advanced AI-powered medical chatbot designed to conduct structured clinical i
 ## Directory Structure
 
 ```
-8-Interviewer/
+Interviewer/
 ├── hf/                       # Core application code
 │   ├── ai_config.py          # OpenAI API configuration
 │   ├── app.py               # Gradio UI and main logic
@@ -54,7 +54,7 @@ An advanced AI-powered medical chatbot designed to conduct structured clinical i
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Kaustubh-Rathi/ai-medical-chatbot-master.git
+   git clone https://github.com/LaxmiNarayanSharma00/My_Medical_Chatbot.git
    cd ai-medical-chatbot-master/8-Interviewer
    ```
 
