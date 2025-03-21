@@ -55,21 +55,22 @@ Interviewer/
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/LaxmiNarayanSharma00/My_Medical_Chatbot.git
-   cd ai-medical-chatbot-master/8-Interviewer
+   cd My_Medical_Chatbot
    ```
 
-2. **Install Dependencies**
-   ```bash
-   pip install -r hf/requirements.txt
-   ```
 
-3. **Set API Key**
-   Create a `.env` file in the root directory:
+2. **Set API Key**
+   Edit `.env` file in the root directory:
    ```
    OPENAI_API_KEY=your-openai-api-key
    ```
 
-4. **Prepare the Vector Database** (if not already present)
+3. **Run following commands**
+   docker-compose up --build
+
+   HURRAY! your application is running on http://localhost:7860/
+
+4. **Prepare the Vector Database** (it is currently available but in future if not then do this step)
    - Navigate to `make the vectordatabase for the llm/`.
    - Follow the instructions in its `Readme.md`:
      1. Run `2-Data.ipynb` to process dialogue data.
@@ -78,24 +79,19 @@ Interviewer/
 
 ## Usage
 
-1. **Run the Application**
-   ```bash
-   python hf/app.py
-   ```
-   - Opens a Gradio interface in your browser.
 
-2. **Interview Tab**
+1. **Interview Tab**
    - Click "Start Interview" to begin.
    - Select language, interviewer, and question count (10–25) in the settings.
    - Respond via text or voice (if audio is enabled).
    - Download the report after completion or end early with "End Interview".
 
-3. **Upload Document Tab**
+2. **Upload Document Tab**
    - Upload a patient document (TXT, PDF, DOCX).
    - Select a language and click "Generate Report".
    - Download the resulting clinical report.
 
-4. **Description Tab**
+3. **Description Tab**
    - View usage instructions and the system architecture diagram.
 
 ## System Architecture
@@ -118,24 +114,6 @@ See `hf/appendix/diagram.png` in the Description tab for a visual representation
 - Ensure the `knowledge/` folder contains the FAISS index (`index.faiss`, `index.pkl`) and embeddings (`embeddings.npy`) before running the app.
 - Audio output requires a working OpenAI TTS setup and may vary in quality across languages.
 
-## GitHub Upload
-
-1. **`.gitignore`** (recommended):
-   ```
-   *.csv
-   *.parquet
-   *.pkl
-   knowledge/
-   .env
-   __pycache__/
-   ```
-
-2. **Push to GitHub**:
-   ```bash
-   git add .
-   git commit -m "Initial commit of AI Medical Chatbot - Interviewer"
-   git push origin master
-   ```
 
 ## Contributing
 
