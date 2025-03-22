@@ -50,11 +50,6 @@ Interviewer/
 - Libraries: Listed in `hf/requirements.txt` (e.g., `gradio`, `langchain-community`, `langchain-openai`, `faiss-cpu`, `openai`, `PyPDF2`, `python-dotenv`)
 - OpenAI API key (stored in `.env`)
 
-## Demo
-
-Check out a full walkthrough of the AI Medical Chatbot - Interviewer in action! This video demonstrates the interview process, multilingual support, and report generation:  
-https://youtu.be/nvnCWA7CdPU?feature=shared
-
 ## Setup
 
 1. **Clone the Repository**
@@ -81,6 +76,12 @@ https://youtu.be/nvnCWA7CdPU?feature=shared
      1. Run `2-Data.ipynb` to process dialogue data.
      2. Run `3-Compression.ipynb` to compress data.
      3. Run `fiss.py` to create the FAISS index (`knowledge/` outputs).
+
+
+## Demo
+
+Check out a full walkthrough of the AI Medical Chatbot - Interviewer in action! This video demonstrates the interview process, multilingual support, and report generation:  
+[DEMO_OF_WORKING_PROJECT](https://youtu.be/nvnCWA7CdPU?feature=shared)
 
 ## Usage
 
