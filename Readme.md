@@ -53,7 +53,7 @@ Interviewer/
 ## Demo
 
 Check out a full walkthrough of the AI Medical Chatbot - Interviewer in action! This video demonstrates the interview process, multilingual support, and report generation:  
-[Watch the Demo on YouTube](https://youtu.be/nvnCWA7CdPU?feature=shared)
+https://youtu.be/nvnCWA7CdPU?feature=shared
 
 ## Setup
 
